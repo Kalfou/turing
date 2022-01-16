@@ -1,0 +1,10 @@
+machine Error
+
+states: q0 q1
+accept: q1
+init: q0
+tapes: 2 10 ""
+
+q0 | '_' '_' | q1 |  ? ?  | ? ?
+
+end

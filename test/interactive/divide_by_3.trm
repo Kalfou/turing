@@ -1,0 +1,22 @@
+machine DivideBy3
+
+states: q0 q1 q2 qAccept
+accept: qAccept
+init: q0
+tapes: 1 10 ?
+
+q0 | '0' | q0 | '0' | >
+
+q0 | '1' | q1 | '1' | >
+
+q1 | '0' | q2 | '0' | >
+
+q1 | '1' | q0 | '1' | >
+
+q2 | '0' | q1 | '0' | >
+
+q2 | '1' | q2 | '1' | >
+
+q0 | '_' | qAccept | '_' | =
+
+end
