@@ -1,0 +1,13 @@
+lex.yy.cc
+turing.tab.cc
+turing.tab.hh
+location.hh
+position.hh
+stack.hh
+turing
+temp.asm
+temp.o
+temp
+temp.out
+test/graphs/*
+test/output/*
